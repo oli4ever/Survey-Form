@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <div class="survey">
+        <h1 id="title">Survey Form</h1>
+        <p id="description">We value your feedback! Please fill out this short survey to help us improve.</p>
+        <form id="survey-form">
+            <fieldset>
+                <label id="name-label" for="name">Full Name: </label>
+                <input id="name" name="name" type="text" placeholder="Enter your name" required>
+                <label id="email-label" for="email"> Email: </label>
+                <input id="email" name="email" type="email" placeholder="Enter your email" required>
+                <label id="number-label" for="number"> Age (years): </label>
+                <input id="number" type="number" name="age" min="18" max="100" placeholder="Enter your age" required>
+                <label for="role">Current Role:</label>
+                <select id="dropdown" name="role" required>
+                    <option value="">Select Role</option>
+                    <option value="student">Student</option>
+                    <option value="professional">Professional</option>
+                    <option value="learner">Learner</option>
+                    <option value="other">Other</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend id="service">How satisfied are you with our service?</legend>
+                <label><input type="radio" name="satisfaction" value="very satisfied" class="inline" required>Very
+                    Satisfied</label>
+                <label><input type="radio" name="satisfaction" value="satisfied" class="inline">Satisfied </label>
+                <label><input type="radio" name="satisfaction" value="not satisfied" class="inline">Not Satisfied
+                </label>
+                <label><input type="radio" name="satisfaction" value="not sure" class="inline">Not Sure </label>
+            </fieldset>
+            <fieldset>
+                <legend id="features">Which features do you use? (Select all that apply)</legend>
+                <label for="feature1"><input type="checkbox" id="feature1" name="features" value="Responsive Design"
+                        class="inline">Responsive Design</label>
+
+                <label for="feature2">
+                    <input type="checkbox" id="feature2" name="features" value="SEO Optimization" class="inline">SEO
+                    Optimization</label>
+
+                <label for="feature3">
+                    <input type="checkbox" id="feature3" name="features" value="Fast Loading Speed" class="inline">Fast
+                    Loading Speed</label>
+
+                <label for="feature4">
+                    <input type="checkbox" id="feature4" name="features" value="Mobile Friendly" class="inline">Mobile
+                    Friendly</label>
+
+                <label for="feature5">
+                    <input type="checkbox" id="feature5" name="features" value="Accessibility Standards"
+                        class="inline">Accessibility Standards</label>
+
+                <label id="comments-label" for="comments">Additional Comments:</label>
+                <textarea id="comments" name="comments" rows="5" placeholder="Enter your comments here"></textarea>
+            </fieldset>
+            <input id="submit" type="submit" value="Submit" />
+        </form>
+    </div>
+</body>
+
+</html>
